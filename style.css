@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Henny+Penny&display=swap');
+
+:root {
+    --roxo: #cdb4dbff;
+    --rosa-claro: #ffc8ddff;
+    --rosa: #ffafccff;
+    --ciano: #bde0feff;
+    --azul: #a2d2ffff;
+    --preto: #000000;
+    --fonte-primaria: "Emilys Candy", serif;
+    --fonte-secundaria: "Henny Penny", system-ui;
+}
