@@ -16,3 +16,22 @@
     --fonte-primaria: "Emilys Candy", serif;
     --fonte-secundaria: "Henny Penny", system-ui;
 }
+
+body{
+    background-color: var(--roxo);
+    color: var(--preto);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: var(--fonte-secundaria);
+}
+.caixa-principal{
+    background-color: var(--ciano);
+    width: 90%;
+    text-align: center;
+    padding: 20px;
+}
+.titulo{
+    font-family: var(--fonte-primaria);
+}
