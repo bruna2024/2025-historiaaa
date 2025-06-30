@@ -1,49 +1,55 @@
-const caixaPrincipal = document.querySelector(".caixa-principal");
-const caixaPerguntas = document.querySelector(".caixa-perguntas");
-const caixaAlternativas = document.querySelector(".caixa.alternativas");
-const caixaResultados = document.querySelector(".caixa-resultado");
-const textoResultos = document.querySelector(".texto-resultado");
-
-const Perguntas = [
-{
-    enuciado:"perguntas 1",
-    alternativas:[
-        "alternativa 1",
-        "alternativa 2"
-    ]
-},
-{
-    enuciado:"perguntas 2",
-    alternativas:[
-        "alternativa 3",
-        "alternativa 4"
-    ]
-},
-{
-    enuciado:"perguntas 3",
-    alternativas:[
-        "alternativa 5",
-        "alternativa 6"
-    ]
-}
+const caixaPrincipal = document.querySelector("caixa-principal");
+const caixaperguntas = document.querySelector('caixa-perguntas');
+const caixaalternativas = document.querySelector('caixa-alternativas');
+const caixaresultado = document.querySelector('caixa-reultado');
+const textoreultado = document.querySelector('texo-reultado');
+const perguntas = [
+ 
+    {
+        enunciado:'pergunta 1',
+        alternativas: [
+            "alernativa 1",
+            "alternativa 2"
+        ]
+    },
+    {
+        enunciado:'pergunta 2',
+        alternativas: [
+            "alernativa 3",
+            "alternativa 4"
+        ]
+    },
+    {
+        enunciado:'pergunta 3',
+        alternativas: [
+            "alernativa 5",
+            "alternativa 6"
+        ]
+    },
+    {
+        enunciado:'pergunta 4',
+        alternativas: [
+            "alernativa 7",
+            "alternativa 8"
+        ]
+    }
 ]
 
-let atual =0;
-let PerguntaAtual;
+let atual = 0;
+let perguntaatual;
 
-function mostraPergunta(){
-    PerguntaAtual = Perguntas[atual]
-    caixaPerguntas.textContent = PerguntaAtual.enuciado
-    mostraAlternativas()
+function motraperguntas(){
+    perguntaaual = perguntas[atual]
+    caixaperguntas.textContent = perguntaatual.enunciado
+    mostraralternativa ();
 }
-function mostraAlternativas(){
-    for( const alternativa of PerguntaAtual.alternativas){
-        const botaoAlternativa= document.creatElement("button");
-        botaoAlternativa.textContent = alternativa;
-        caixaAlternativas.appendChild(botaoAlternativa)
+
+function mostrarAlternativa(){
+    for( const alternativa of perguntaatual.alternativas ){
+        const otaoAlternativas = document.createElement("button");
+        otaoAlternativas.textContent = alternativa;
+        caixaalternativas.appendChild(botaoAlternativas)
     }
 }
 
-mostraPergunta();
-
-console.log(caixaPrincipal)
+mostrarpergunta ();

@@ -29,9 +29,11 @@ body{
 .caixa-principal{
     background-color: var(--ciano);
     width: 90%;
+    max-width: 600px;
     text-align: center;
     padding: 20px;
 }
 .titulo{
+    color: var(--rosa-claro);
     font-family: var(--fonte-primaria);
 }
